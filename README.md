@@ -7,6 +7,7 @@ Dependencies
 - `make`
 - `bsdtar` (`libarchive`)
 - `uboot-tools`
+- `swig`
 - `sudo`
 - `fdisk`
 
@@ -25,7 +26,9 @@ Here is a simple way to get one:
     ./ct-ng arm-unknown-eabi
     ./ct-ng build
 
+If you use this method, please edit the Makefile to change the prefix of the toolchain from `arm-none-eabi-` to `arm-unknown-eabi-`.
 Alternatively if you run archlinux, you can install the arm-noneabi toolchain (gcc, binutils...)
+On ubuntu you can install gcc-arm-none-eabi.
 
 Preparing the files
 ===================
