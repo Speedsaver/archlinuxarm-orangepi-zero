@@ -16,7 +16,7 @@ Prerequisite
 
 In order to build the image, you need a working ARM toolchain.
 
-Here is a simple way to get one:
+Here is a simple way to get one: (note dependencies for Ubuntu sudo apt install u-boot-tools libarchive-tools autoconf flex texinfo help2man gawk libtool libtool-bin bison)
 
     git clone https://github.com/crosstool-ng/crosstool-ng
     cd crosstool-ng
