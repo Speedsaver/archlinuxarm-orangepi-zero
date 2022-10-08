@@ -28,7 +28,7 @@ Here is a simple way to get one: (note dependencies for Ubuntu sudo apt install 
 
 If you use this method, please edit the Makefile to change the prefix of the toolchain from `arm-none-eabi-` to `arm-unknown-eabi-`.
 Alternatively if you run archlinux, you can install the arm-noneabi toolchain (gcc, binutils...)
-On ubuntu you can install gcc-arm-none-eabi.
+On ubuntu it's simply sudo apt install gcc-arm-none-eabi.
 
 Preparing the files
 ===================
