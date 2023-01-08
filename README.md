@@ -33,7 +33,7 @@ On ubuntu it's simply sudo apt install gcc-arm-none-eabi.
 Preparing the files
 ===================
 
-Run `make` (specifying jobs with `-jX` is supported and recommended).
+Run `make` (specifying jobs with `-jx`where x is the number of cores of your processor +1 for faster builds is supported and recommended).
 
 This will provide:
 
@@ -45,8 +45,8 @@ This will provide:
 Installing the distribution
 ===========================
 
-Run `make install BLOCK_DEVICE=/dev/mmcblk0` with the appropriate value for
-`BLOCK_DEVICE`.
+Insert a micro sd card and run `make install BLOCK_DEVICE=/dev/sdx` with the appropriate value for
+`BLOCK_DEVICE`(run lsblk to verify the value required for x after sd).
 
 This is running commands similar to [any other AllWinner ArchLinuxARM
 installation][alarm-allwinner].
