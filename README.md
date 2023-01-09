@@ -45,7 +45,7 @@ This will provide:
 Installing the distribution
 ===========================
 
-Insert a micro sd card and run `make install BLOCK_DEVICE=/dev/sdx` with the appropriate value for
+Insert a micro sd card unmount and run `make install BLOCK_DEVICE=/dev/sdx` with the appropriate value for
 `BLOCK_DEVICE`(run lsblk to verify the value required for x after sd).
 
 This is running commands similar to [any other AllWinner ArchLinuxARM
