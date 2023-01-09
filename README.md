@@ -55,6 +55,8 @@ Once logged in via ssh go root by typing:
 ```
 su
 ```
+The password is root
+
 Then type the following commands, in this order, to update Archlinuxarm on your Orange Pi Zero device and you'll be good to go:
 
 ```
