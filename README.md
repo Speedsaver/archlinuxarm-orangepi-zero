@@ -4,7 +4,7 @@ Zero board. This is a fork and has been updated to use more recent u-boot and ke
 Dependencies
 ============
 ```
-sudo apt install autoconf bison fdisk flex gawk gcc-arm-none-eabi help2man libarchive-tools libtool libtool-bin make sudo swig texinfo
+sudo apt install autoconf bison distutils.core fdisk flex gawk gcc-arm-none-eabi help2man libarchive-tools libtool libtool-bin make sudo swig texinfo
 ```
 Preparing the files
 ===================
