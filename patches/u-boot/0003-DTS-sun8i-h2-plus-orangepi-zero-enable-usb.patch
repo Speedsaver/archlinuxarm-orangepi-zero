@@ -1,0 +1,47 @@
+From 0424fb37124f8131595f47393906c4b2825576dd Mon Sep 17 00:00:00 2001
+From: Xogium <contact@xogium.me>
+Date: Wed, 9 Dec 2020 05:26:40 -0500
+Subject: [PATCH] DTS: sun8i-h2-plus-orangepi-zero: enabled usb2 and usb3 in
+ ohci/ehci mode.
+
+---
+ .../arm/dts/sun8i-h2-plus-orangepi-zero.dts | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+diff --git a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+index 17ed9d3f698a..074134e06d64 100644
+--- a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
++++ b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+@@ -124,6 +124,14 @@ &ehci1 {
+ 	status = "okay";
+ };
+ 
++&ehci2 {
++	status = "okay;";
++};
++
++&ehci3 {
++	status = "okay";
++};
++
+ &emac {
+ 	phy-handle = <&int_mii_phy>;
+ 	phy-mode = "mii";
+@@ -162,6 +170,14 @@ &ohci1 {
+ 	status = "okay";
+ };
+ 
++&ohci2 {
++	status = "okay";
++};
++
++&ohci3 {
++	status = "okay";
++};
++
+ &spi0 {
+ 	/* Disable SPI NOR by default: it optional on Orange Pi Zero boards */
+ 	status = "disabled";
+-- 
+2.29.2
+

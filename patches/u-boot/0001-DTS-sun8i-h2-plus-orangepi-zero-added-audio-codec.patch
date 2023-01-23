@@ -1,0 +1,31 @@
+From a5ee58db94f98e75ae178a8510176da26c3be3fb Mon Sep 17 00:00:00 2001
+From: Xogium <contact@xogium.me>
+Date: Wed, 14 Oct 2020 07:54:30 -0400
+Subject: [PATCH] DTS: sun8i-h2-plus-orangepi-zero: added audio codec.
+
+---
+ arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+index f19ed981da9d..3314bcd2e784 100644
+--- a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
++++ b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+@@ -193,6 +193,14 @@ &uart2 {
+ 	status = "disabled";
+ };
+ 
++&codec {
++        allwinner,audio-routing =
++                "Speaker", "LINEOUT",
++                "MIC1", "Mic",
++                "Mic",  "MBIAS";
++        status = "okay";
++};
++
+ &usb_otg {
+ 	dr_mode = "peripheral";
+ 	status = "okay";
+-- 
+2.28.0
+

@@ -1,0 +1,26 @@
+From ccaed36d50c15bc2159ac863223ea3e5b2ad0385 Mon Sep 17 00:00:00 2001
+From: Xogium <contact@xogium.me>
+Date: Wed, 22 Sep 2021 09:44:52 +0200
+Subject: [PATCH]     DTS: sun8i-h2-plus-orangepi-zero: enabled uart1 for use
+ with the new HAT.
+
+---
+ arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+index 074134e06d64..2de60aab5fbe 100644
+--- a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
++++ b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+@@ -200,7 +200,7 @@ &uart0 {
+ &uart1 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart1_pins>;
+-	status = "disabled";
++	status = "okay";
+ };
+ 
+ &uart2 {
+-- 
+2.33.0
+

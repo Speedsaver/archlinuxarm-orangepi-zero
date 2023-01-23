@@ -32,6 +32,7 @@ $(ARCH_TARBALL):
 	$(WGET) http://archlinuxarm.org/os/$@
 
 $(UBOOT_BIN): $(UBOOT_DIR)
+	cd $< && find ../patches/ -type f -name '*.patch' -print0 | xargs -0 cat | patch -p1
 	cd $< && $(MAKE) orangepi_zero_defconfig && $(MAKE) CROSS_COMPILE=$(CROSS_COMPILE) PYTHON=$(PYTHON)
 	cp $</$@ .
 

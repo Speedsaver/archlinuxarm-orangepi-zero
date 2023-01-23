@@ -1,0 +1,28 @@
+From c0b976be149c6df1b5024b232c13ed3e4e2ef7e3 Mon Sep 17 00:00:00 2001
+From: Xogium <contact@xogium.me>
+Date: Sat, 31 Oct 2020 05:00:33 -0400
+Subject: [PATCH 1/2] DTS: sun8i-h2-plus-orange-pi-zero: added i2c buses.
+
+---
+ arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+index 3314bcd2e784..17ed9d3f698a 100644
+--- a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
++++ b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+@@ -215,3 +215,11 @@ &usbphy {
+ 	status = "okay";
+ 	usb0_id_det-gpios = <&pio 6 12 GPIO_ACTIVE_HIGH>; /* PG12 */
+ };
++
++&i2c0 {
++	status = "okay";
++};
++
++&i2c1 {
++	status = "okay";
++};
+-- 
+2.29.0
+
