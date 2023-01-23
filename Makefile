@@ -73,5 +73,6 @@ clean:
 	$(RM) $(ALL)
 	$(RM) boot.txt
 	$(RM) -r $(UBOOT_DIR)
+	$(RM) $(UBOOT_TARBALL)
 
 .PHONY: all serial clean install
