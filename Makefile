@@ -12,10 +12,11 @@ UBOOT_BIN = u-boot-sunxi-with-spl.bin
 
 ARCH_TARBALL = ArchLinuxARM-armv7-latest.tar.gz
 
-
 UBOOT_VERSION = 2023.01
 UBOOT_TARBALL = u-boot-v$(UBOOT_VERSION).tar.gz
 UBOOT_DIR = u-boot-$(UBOOT_VERSION)
+
+DTB_FILE = sun8i-h2-plus-orangepi-zero.dtb
 
 MOUNT_POINT = mnt
 
@@ -60,6 +61,8 @@ else
 	sudo mount $(call part1,$(BLOCK_DEVICE)) $(MOUNT_POINT)
 	sudo bsdtar -xpf $(ARCH_TARBALL) -C $(MOUNT_POINT)
 	sudo cp $(UBOOT_SCRIPT) $(MOUNT_POINT)/boot
+	sudo rm $(MOUNT_POINT)/boot/dtbs/*.dtb
+	sudo cp $(UBOOT_DIR)/arch/arm/dts/$(DTB_FILE) $(MOUNT_POINT)/boot/dtbs
 	sync
 	sudo umount $(MOUNT_POINT) || true
 	rmdir $(MOUNT_POINT) || true
