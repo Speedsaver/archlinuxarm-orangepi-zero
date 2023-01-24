@@ -1,0 +1,23 @@
+From 1af1b8af782c28b70ee503a91ecef319af29f90f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Zolt=C3=A1n=20K=C3=A9ri?= <z@zolk3ri.name>
+Date: Tue, 24 Jan 2023 20:01:03 +0100
+Subject: [PATCH] sun8i-h2-plus-orangepi-zero.dts: Enable UART2
+
+---
+ arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+index 3706216ffb..2275c9acf9 100644
+--- a/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
++++ b/arch/arm/dts/sun8i-h2-plus-orangepi-zero.dts
+@@ -191,4 +191,4 @@
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart2_pins>;
+-	status = "disabled";
++	status = "okay";
+ };
+
+--
+2.39.1
+
