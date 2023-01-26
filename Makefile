@@ -63,6 +63,7 @@ else
 	sudo cp $(UBOOT_SCRIPT) $(MOUNT_POINT)/boot
 	sudo rm $(MOUNT_POINT)/boot/dtbs/*.dtb
 	sudo cp $(UBOOT_DIR)/arch/arm/dts/$(DTB_FILE) $(MOUNT_POINT)/boot/dtbs
+	sudo chattr -R +i $(MOUNT_POINT)/boot/dtbs
 	sync
 	sudo umount $(MOUNT_POINT) || true
 	rmdir $(MOUNT_POINT) || true
