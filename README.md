@@ -1,5 +1,10 @@
-This repository can be used to create an ArchLinuxARM image for the OrangePi
-Zero board. This is a fork and has been updated to use more recent u-boot and kernel since the 4.13 kernel isn't required anymore.
+This repository can be used to create an ArchLinuxARM image for the Xunlong Orange Pi Zero (LTS, H2+/H3) Single Board Computer, Quad Core Arm Cortex-A7 256MB/512MB RAM.
+
+This is a fork and has been updated to use more recent u-boot and kernel since the 4.13 kernel isn't required anymore.
+
+Audio Codec,UART0, UART1 and UART2, I2C and USB0, USB1 and USB2 enabled
+
+
 
 Dependencies
 ============
