@@ -34,7 +34,7 @@ This will provide:
 Installing the distribution
 ===========================
 
-Insert a micro sd card, unmount and run `
+Insert a micro sd card, **unmount it** and run
 ```
 sudo make install BLOCK_DEVICE=/dev/sdx
 ```
