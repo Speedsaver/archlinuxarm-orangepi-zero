@@ -36,7 +36,7 @@ Installing the distribution
 
 Insert a micro sd card, unmount and run `
 ```
-make install BLOCK_DEVICE=/dev/sdx
+sudo make install BLOCK_DEVICE=/dev/sdx
 ```
 with the appropriate value for
 `BLOCK_DEVICE`(run lsblk to verify the value required for x after sd).
